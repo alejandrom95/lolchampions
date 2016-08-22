@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/menubar"
+        android:id="@+id/my_menubar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"/>
+
+</LinearLayout>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.lolchampions.MainActivity"
+    android:id="@+id/mainOuterLayout"
+    android:gravity="center_horizontal"
+    android:background="#000">
+
+    <include layout="@layout/menubar"
+        android:id="@+id/my_menubar"/>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/mainScrollView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mainInnerLayout">
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/championLoadingImage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionName"
+                android:textSize="44dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionSubtitle"
+                android:textSize="32dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoAttack"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarAttack"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/attackBarColor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoDefense"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarDefense"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/attackBarColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoAbility"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarAbility"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/attackBarColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoDifficulty"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarDifficulty"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/attackBarColor"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+-->
+<!--
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dp" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Windows PC"
+                    android:textColor="#b7102f"
+                    android:textSize="25dp">
+                </TextView>
+
+            </ViewFlipper>
+-->

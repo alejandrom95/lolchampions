@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.lolchampions.MainActivity"
+    android:id="@+id/mainOuterLayout"
+    android:gravity="center_horizontal"
+    android:background="#000">
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/mainScrollView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mainInnerLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionSkins"
+                android:textSize="44dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+<!--
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="1050px"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/championLoadingImage" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionSubtitle"
+                android:textSize="32dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/white"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"/>
+-->

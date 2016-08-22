@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.lolchampions.MainActivity"
+    android:id="@+id/mainOuterLayout"
+    android:gravity="center_horizontal"
+    android:background="#000">
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/mainScrollView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mainInnerLayout">
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="570px"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/championLoadingImage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionName"
+                android:textSize="44dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionSubtitle"
+                android:textSize="32dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionTags"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/white"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoAttack"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarAttack"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/attackBarColor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoDefense"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarDefense"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/defenseBarColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoAbility"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarAbility"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/abilityBarColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoDifficulty"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"/>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarDifficulty"
+                android:max="10"
+                android:foregroundTint="#fff"
+                android:progressBackgroundTint="#fff"
+                android:progressTint="@color/difficultyBarColor"
+                android:layout_marginBottom="30px"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/white"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionStats"
+                android:textSize="32dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textChampionStats"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LOL: Champions</string>
+    <string name="attackPower">Attack Power</string>
+    <string name="defensePower">Defence Power</string>
+    <string name="abilityPower">Ability Power</string>
+    <string name="difficulty">Difficulty</string>
+</resources>

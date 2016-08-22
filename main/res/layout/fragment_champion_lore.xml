@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.lolchampions.MainActivity"
+    android:id="@+id/mainOuterLayout"
+    android:gravity="center_horizontal"
+    android:background="#000">
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/mainScrollView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mainInnerLayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleChampionLore"
+                android:textSize="44dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Champion Lore"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textChampionLore"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
